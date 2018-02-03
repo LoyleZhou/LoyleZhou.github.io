@@ -103,18 +103,18 @@
   <meta name="keywords" content="ES6 函数," />
 
 
-<meta name="description" content="// ES6前不允许给参数赋默认值，因此一般都通过变通的方式1234567function lai(a,b)&amp;#123;    b = b || &amp;apos;来吧哥哥&amp;apos;;    console.log(a, b);&amp;#125;lai(&amp;apos;你好啊&amp;apos;,&amp;apos;来吧哥哥&amp;apos;);lai(&amp;apos;来吧哥哥&amp;apos;);lai(&amp;apos;你好吗&amp;apos;,&amp;a">
+<meta name="description" content="// ES6前不允许给参数赋默认值，因此一般都通过变通的方式1234567function lai(a,b)&amp;#123;    b = b || &amp;apos;来吧哥哥&amp;apos;;    console.log(a, b);&amp;#125;lai(&amp;apos;你好啊&amp;apos;,&amp;apos;来吧哥哥&amp;apos;); // 你好啊来吧哥哥lai(&amp;apos;来吧哥哥&amp;apos;); // 来吧哥哥来吧哥">
 <meta name="keywords" content="ES6 函数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6-函数的扩展">
 <meta property="og:url" content="http://yoursite.com/2018/02/03/ES6-函数的扩展/index.html">
 <meta property="og:site_name" content="来吧哥哥">
-<meta property="og:description" content="// ES6前不允许给参数赋默认值，因此一般都通过变通的方式1234567function lai(a,b)&amp;#123;    b = b || &amp;apos;来吧哥哥&amp;apos;;    console.log(a, b);&amp;#125;lai(&amp;apos;你好啊&amp;apos;,&amp;apos;来吧哥哥&amp;apos;);lai(&amp;apos;来吧哥哥&amp;apos;);lai(&amp;apos;你好吗&amp;apos;,&amp;a">
+<meta property="og:description" content="// ES6前不允许给参数赋默认值，因此一般都通过变通的方式1234567function lai(a,b)&amp;#123;    b = b || &amp;apos;来吧哥哥&amp;apos;;    console.log(a, b);&amp;#125;lai(&amp;apos;你好啊&amp;apos;,&amp;apos;来吧哥哥&amp;apos;); // 你好啊来吧哥哥lai(&amp;apos;来吧哥哥&amp;apos;); // 来吧哥哥来吧哥">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-03T13:46:37.746Z">
+<meta property="og:updated_time" content="2018-02-03T13:50:34.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6-函数的扩展">
-<meta name="twitter:description" content="// ES6前不允许给参数赋默认值，因此一般都通过变通的方式1234567function lai(a,b)&amp;#123;    b = b || &amp;apos;来吧哥哥&amp;apos;;    console.log(a, b);&amp;#125;lai(&amp;apos;你好啊&amp;apos;,&amp;apos;来吧哥哥&amp;apos;);lai(&amp;apos;来吧哥哥&amp;apos;);lai(&amp;apos;你好吗&amp;apos;,&amp;a">
+<meta name="twitter:description" content="// ES6前不允许给参数赋默认值，因此一般都通过变通的方式1234567function lai(a,b)&amp;#123;    b = b || &amp;apos;来吧哥哥&amp;apos;;    console.log(a, b);&amp;#125;lai(&amp;apos;你好啊&amp;apos;,&amp;apos;来吧哥哥&amp;apos;); // 你好啊来吧哥哥lai(&amp;apos;来吧哥哥&amp;apos;); // 来吧哥哥来吧哥">
 
 
 
@@ -332,7 +332,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-03T21:46:37+08:00">2018-02-03</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-03T21:50:34+08:00">2018-02-03</time>
             
           </span>
 
@@ -387,8 +387,8 @@
       
 
       
-        <p>// ES6前不允许给参数赋默认值，因此一般都通过变通的方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function lai(a,b)&#123;</span><br><span class="line">    b = b || &apos;来吧哥哥&apos;;</span><br><span class="line">    console.log(a, b);</span><br><span class="line">&#125;</span><br><span class="line">lai(&apos;你好啊&apos;,&apos;来吧哥哥&apos;);</span><br><span class="line">lai(&apos;来吧哥哥&apos;);</span><br><span class="line">lai(&apos;你好吗&apos;,&apos;&apos;)</span><br></pre></td></tr></table></figure></p>
-<p>// ES6 允许为函数的参数设置默认值，即直接写在参数定义的后面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function lai1(a, b = &apos;来吧哥哥&apos;)&#123;</span><br><span class="line">    console.log(a, b);</span><br><span class="line">&#125;</span><br><span class="line">lai1(&apos;hello&apos;, &apos;Loyle&apos;);</span><br><span class="line">lai1(&apos;hello&apos;);</span><br><span class="line">lai1(&apos;hello&apos;, &apos;&apos;);</span><br></pre></td></tr></table></figure></p>
+        <p>// ES6前不允许给参数赋默认值，因此一般都通过变通的方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function lai(a,b)&#123;</span><br><span class="line">    b = b || &apos;来吧哥哥&apos;;</span><br><span class="line">    console.log(a, b);</span><br><span class="line">&#125;</span><br><span class="line">lai(&apos;你好啊&apos;,&apos;来吧哥哥&apos;); // 你好啊来吧哥哥</span><br><span class="line">lai(&apos;来吧哥哥&apos;); // 来吧哥哥来吧哥哥</span><br><span class="line">lai(&apos;你好吗&apos;,&apos;&apos;); // 你好吗来吧哥哥</span><br></pre></td></tr></table></figure></p>
+<p>// ES6 允许为函数的参数设置默认值，即直接写在参数定义的后面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function lai1(a, b = &apos;来吧哥哥&apos;)&#123;</span><br><span class="line">    console.log(a, b);</span><br><span class="line">&#125;</span><br><span class="line">lai1(&apos;hello&apos;, &apos;Loyle&apos;); // hello Loyle</span><br><span class="line">lai1(&apos;hello&apos;); // hello 来吧哥哥</span><br><span class="line">lai1(&apos;hello&apos;, &apos;&apos;); // hello</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
