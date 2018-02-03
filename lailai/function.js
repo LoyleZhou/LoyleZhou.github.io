@@ -14,3 +14,17 @@ function lai1(a, b = '来吧哥哥'){
 lai1('hello', 'Loyle'); // hello Loyle
 lai1('hello'); // hello 来吧哥哥
 lai1('hello', ''); // hello
+
+function Point(x = 0, y = 0) {
+    this.x = x;
+    this.y = y;
+  }
+  
+  const p = new Point();
+  p; // { x: 0, y: 0 }
+
+const a = (function (a) {}).length; // 1
+b = (function (a, b = 1) {}).length; // 1
+c = (function (a = 2) {}).length; // 0
+d = (function (a, b =1, c) {}).length // 1
+console.log(a,b,c,d);
