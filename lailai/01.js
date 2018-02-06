@@ -1,1 +1,0 @@
-(function (a) {}).length; // 1
